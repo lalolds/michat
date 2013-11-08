@@ -1,0 +1,35 @@
+<head>
+  <meta charset="UTF-8">
+  <title>wechat</title>
+</head>
+<body>
+  <h1>welcome</h1>  
+  {{> alvin}} 
+  {{> prueba}}
+  {{> chat}}
+  {{> ingreso}}
+
+</body>
+
+<template name="alvin">
+  <!--
+  comentarios
+-->
+  <p class="saludo">hola como estas</p>
+</template>
+
+<template name="prueba">
+  <h1 class="hola">braulio</h1>
+</template>
+
+<template name="chat">
+  {{#each mensajitos}}
+  <p>{{nombre}}: {{msg}}</p>
+  {{/each}}
+</template>
+
+<template name="ingreso">
+ <p><input name="nombre" id="nombre" type="text" placeholder="ingrese su nombre"> </p> 
+ <p><input name="caja" id="caja" type="text" placeholder="ingrese su comentario"> </p> 
+</template>
+
